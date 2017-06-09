@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="ISO-8859-1">
+		<!--Bootstrap-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<!--Fonte externa-->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+		<!--Nosso CSS-->
+		<link rel="stylesheet" type="text/css" media="all" href="css/estilo.css">
+		<!--Biblioteca Excanvas-->
+		<script src="js/excanvas.compiled.js"></script>
+		<!--Lógica do Jogo-->
+		<script src="js/gameLoop.js"></script>
+		<title>JOGO DE DADOS</title>
+	</head>
+	<body>
+		<section id="main" class="container">
+			<header class="col-mod-12 text-center">
+				<h1>CASSINO DO PROF.DIEGO</h1>
+			</header>
+			<div class="clearfix"></div>
+			<nav class="col-md-8 col-md-offset-2">
+				<ul class="regras-jogo">
+					<li>Regras do Jogo
+						<ul class="regras">
+							<li>O Jogador lança um par de dados.</li>
+							<li>A soma das duas faces pode ser qualquer número entre 2 e 12.</li>
+							<li>Se o jogador lançar 7 ou 11 na primeira jogada, o jogador vence.</li>
+							<li>Se lançar e obter 2, 3 ou 12, o jogador perde.</li>
+							<li>Para qualquer outro resultado (4, 5, 6, 8, 9 ou 10) será solicitado ao jogar que lance os dados novamente.</li>
+						</ul>
+					</li>	
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+			<section class="dados col-md-3 col-md-offset-2">
+				<form name="f" id="f">
+					<input type="text" name="pontos" id="pontos">
+					<input type="text" name="mensagem" id="mensagem">
+				</form>
+				<button class="btn btn-primary" onclick="dados();">Lançar Dados</button>
+			</section>
+			<canvas id="canvas" class="col-md-4" width="350" height="200">Seu navegador não suporta HTML5 Canvas</canvas>
+			<footer class="col-md-8 col-md-offset-2 text-center">
+				<p>Prof. Diego Marques - Jogos com Canvas</p>
+			</footer>
+		</section>
+	</body>
+</html>
