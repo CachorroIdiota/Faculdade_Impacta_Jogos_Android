@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="@string/derrote_seu_oponente"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/btn_pedra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:text="@string/pedra" />
+
+        <Button
+            android:id="@+id/btn_papel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:text="@string/papel" />
+
+        <Button
+            android:id="@+id/btn_tesoura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:text="@string/tesoura" />
+
+        <ImageView
+            android:id="@+id/img_computador"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:contentDescription="@string/papel"
+            android:src="@drawable/player" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="2"
+            android:text="@string/vs"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/img_jogador"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:contentDescription="@string/papel"
+            android:src="@drawable/monster" />
+
+        <ImageView
+            android:id="@+id/img_computador"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:contentDescription="@string/pedra" />
+
+        <ImageView
+            android:id="@+id/img_jogador"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:contentDescription="@string/pedra" />
+
+        <ImageView
+            android:id="@+id/img_computador"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:contentDescription="@string/tesoura" />
+
+        <ImageView
+            android:id="@+id/img_jogador"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:contentDescription="@string/tesoura" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="183dp"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="3"
+            android:text="@string/placar"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_jogador"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_computador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="3"
+            android:text="@string/_0"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </GridLayout>
+</LinearLayout>
